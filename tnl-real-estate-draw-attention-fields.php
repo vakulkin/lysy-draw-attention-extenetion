@@ -153,6 +153,10 @@ if (!class_exists('TNL_RealEstateDrawAttentionFields')) {
             wp_register_style('tnl-real-estate-style', false);
             wp_enqueue_style('tnl-real-estate-style');
             $custom_css = "
+            body .real-estate-fields-left {
+                margin-bottom: 20px;
+            }
+
             @media screen and (min-width: 1100px) {
                 body .featherlight .featherlight-content {
                     max-width: 90%;
