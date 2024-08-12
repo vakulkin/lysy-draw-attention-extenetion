@@ -39,7 +39,7 @@ if (!class_exists('Lysy_Draw_Attention_Extention')) {
                 if (is_array($meta_value)) {
                     foreach ($meta_value as $key => &$value) {
                         $value['action'] = 'url';
-                        $value['action-url-url'] = isset($value['style']) && $value['style'] === 'sprzedane' ? 'javascript:void(0);' :  get_home_url(null, "map-details/?map={$object_id}&index={$key}");
+                        $value['action-url-url'] = isset($value['style']) && strtolower($value['style']) === 'sprzedane' ? 'javascript:void(0);' :  get_home_url(null, "map-details/?map={$object_id}&index={$key}");
                     }
                     unset($value);
                 }
