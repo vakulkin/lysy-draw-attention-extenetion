@@ -1,0 +1,1 @@
+Place this shortcode [hotspot_html] on page with url /map-details
