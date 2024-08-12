@@ -9,9 +9,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-if (!class_exists('TNL_RealEstateDrawAttentionFields')) {
+if (!class_exists('Lysy_Draw_Attention_Extention')) {
 
-    class TNL_RealEstateDrawAttentionFields
+    class Lysy_Draw_Attention_Extention
     {
 
         public function __construct()
@@ -186,5 +186,5 @@ if (!class_exists('TNL_RealEstateDrawAttentionFields')) {
         }
     }
 
-    new TNL_RealEstateDrawAttentionFields();
+    new Lysy_Draw_Attention_Extention();
 }
