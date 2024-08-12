@@ -162,30 +162,11 @@ if (!class_exists('TNL_RealEstateDrawAttentionFields')) {
         {
             wp_register_style('tnl-real-estate-style', false);
             wp_enqueue_style('tnl-real-estate-style');
-            $custom_css = "
-            body .real-estate-fields-left {
+            $custom_css = "body .real-estate-fields-left {
                 margin-bottom: 20px;
             }
 
             @media screen and (min-width: 1100px) {
-                body .featherlight .featherlight-content {
-                    max-width: 90%;
-                    padding: 50px;
-                    width: 1000px;
-                }
-
-                body .featherlight .featherlight-close-icon {
-                    top: 5px;
-                    right: 10px;
-                    width: auto;
-                    font-size: 30px;
-                    line-height: 1;
-                }
-
-                body .hotspot-info {
-                    width: 100%;
-                }
-
                 body .real-estate-fields-container {
                     display: flex;
                 }
@@ -200,18 +181,7 @@ if (!class_exists('TNL_RealEstateDrawAttentionFields')) {
                     flex-grow: 1;
                     width: 60%;
                 }
-            }
-            @media screen and (min-width: 1300px) {
-                body .featherlight .featherlight-content {
-                    width: 1200px;
-                }
-            }
-            @media screen and (min-width: 1700px) {
-                body .featherlight .featherlight-content {
-                    width: 1600px;
-                }
-            }
-            ";
+            }";
             wp_add_inline_style('tnl-real-estate-style', $custom_css);
         }
     }
